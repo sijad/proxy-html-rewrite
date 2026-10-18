@@ -1,0 +1,38 @@
+{
+  "name": "proxy-html-rewrite",
+  "version": "0.1.0",
+  "description": "Node.js middleware for modifying HTML responses and rewriting upstream links.",
+  "keywords": [
+    "connect",
+    "express",
+    "html",
+    "middleware",
+    "proxy",
+    "rewrite"
+  ],
+  "license": "MIT",
+  "author": "sijad",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    }
+  },
+  "scripts": {
+    "test": "node --test",
+    "prepublishOnly": "npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
